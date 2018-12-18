@@ -1,0 +1,32 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
+  "rules": {
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "curly": [true, "ignore-same-line"],
+    "quotemark": [true, "double", "avoid-template", "avoid-escape"],
+    "prefer-template": [true, "allow-single-concat"],
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "ordered-imports": true,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": true,
+    "trailing-comma": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "arrow-return-shorthand": true,
+    "no-this-assignment": [
+      true,
+      {
+        "allowed-names": ["^self$"],
+        "allow-destructuring": true
+      }
+    ],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
+    "prettier": true
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
